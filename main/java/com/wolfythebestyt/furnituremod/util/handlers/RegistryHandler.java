@@ -56,6 +56,6 @@ public class RegistryHandler
 	
 	public static void initRegistries()
 	{
-		NetworkRegistry.INSTANCE.registerGuiHandler(Main.instance, new GuiHandler());
+		NetworkRegistry.INSTANCE.registerGuiHandler(Main.instance, new GUIHandler());
 	}
 }
