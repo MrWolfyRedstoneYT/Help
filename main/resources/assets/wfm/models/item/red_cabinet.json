@@ -1,0 +1,120 @@
+{
+    "__comment": "Model generated using MrCrayfish's Model Creator (https://mrcrayfish.com/tools?id=mc)",
+    "textures": {
+        "particle": "blocks/wool_colored_red",
+        "0": "blocks/wool_colored_red",
+        "1": "blocks/wool_colored_black",
+        "2": "blocks/stone"
+    },
+    "display": {
+        "firstperson_righthand": {
+            "rotation": [ 0, 315, 0 ],
+            "translation": [ 0, 2.5, 0 ],
+            "scale": [ 0.4, 0.4, 0.4 ]
+        },
+        "thirdperson_lefthand": {
+            "rotation": [ 75, 45, 0 ],
+            "translation": [ 0, 2.5, 0 ],
+            "scale": [ 0.375, 0.375, 0.375 ]
+        },
+        "firstperson_lefthand": {
+            "rotation": [ 0, 0, 45 ],
+            "translation": [ 0, 2.5, 0 ],
+            "scale": [ 0.4, 0.4, 0.4 ]
+        },
+        "gui": {
+            "rotation": [ 30, 45, 0 ],
+            "translation": [ 0, -1, 0 ],
+            "scale": [ 0.625, 0.625, 0.625 ]
+        },
+        "ground": {
+            "rotation": [ 0, 0, 0 ],
+            "translation": [ 0, 3, 0 ],
+            "scale": [ 0.25, 0.25, 0.25 ]
+        },
+        "fixed": {
+            "rotation": [ 0, 180, 0 ],
+            "translation": [ 0, 0, -7 ],
+            "scale": [ 1, 1, 0.1 ]
+        },
+        "thirdperson_righthand": {
+            "rotation": [ 75, 315, 0 ],
+            "translation": [ 0, 2.5, 0 ],
+            "scale": [ 0.375, 0.375, 0.375 ]
+        }
+    },
+    "elements": [
+        {
+            "name": "Cabinet_Body",
+            "from": [ 0, 0, 0 ], 
+            "to": [ 16, 17, 16 ], 
+            "faces": {
+                "north": { "texture": "#0", "uv": [ 0, 0, 16, 17 ] },
+                "east": { "texture": "#0", "uv": [ 0, 0, 16, 17 ] },
+                "south": { "texture": "#0", "uv": [ 0, 0, 16, 17 ] },
+                "west": { "texture": "#0", "uv": [ 0, 0, 16, 17 ] },
+                "down": { "texture": "#0", "uv": [ 0, 0, 16, 16 ] }
+            }
+        },
+        {
+            "name": "Cabinet",
+            "from": [ -1, 17, -1 ], 
+            "to": [ 17, 18, 17 ], 
+            "faces": {
+                "north": { "texture": "#0", "uv": [ 0, 0, 18, 1 ] },
+                "east": { "texture": "#0", "uv": [ 0, 0, 18, 1 ] },
+                "south": { "texture": "#0", "uv": [ 0, 0, 18, 1 ] },
+                "west": { "texture": "#0", "uv": [ 0, 0, 18, 1 ] },
+                "up": { "texture": "#0", "uv": [ 0, 0, 18, 18 ] },
+                "down": { "texture": "#0", "uv": [ 0, 0, 18, 18 ] }
+            }
+        },
+        {
+            "name": "Drawer_1",
+            "from": [ 0, 0, 16 ], 
+            "to": [ 16, 8, 17 ], 
+            "faces": {
+                "east": { "texture": "#1", "uv": [ 0, 0, 1, 8 ] },
+                "south": { "texture": "#1", "uv": [ 0, 0, 16, 8 ] },
+                "west": { "texture": "#1", "uv": [ 0, 0, 1, 8 ] },
+                "up": { "texture": "#1", "uv": [ 0, 0, 16, 1 ] },
+                "down": { "texture": "#1", "uv": [ 0, 0, 16, 1 ] }
+            }
+        },
+        {
+            "name": "Drawer_2",
+            "from": [ 0, 9, 16 ], 
+            "to": [ 16, 17, 17 ], 
+            "faces": {
+                "east": { "texture": "#1", "uv": [ 0, 0, 1, 8 ] },
+                "south": { "texture": "#1", "uv": [ 0, 0, 16, 8 ] },
+                "west": { "texture": "#1", "uv": [ 0, 0, 1, 8 ] },
+                "down": { "texture": "#1", "uv": [ 0, 0, 16, 1 ] }
+            }
+        },
+        {
+            "name": "Holder_1",
+            "from": [ 5, 4, 17 ], 
+            "to": [ 11, 5, 18 ], 
+            "faces": {
+                "east": { "texture": "#2", "uv": [ 0, 0, 1, 1 ] },
+                "south": { "texture": "#2", "uv": [ 0, 0, 6, 1 ] },
+                "west": { "texture": "#2", "uv": [ 0, 0, 1, 1 ] },
+                "up": { "texture": "#2", "uv": [ 0, 0, 6, 1 ] },
+                "down": { "texture": "#2", "uv": [ 0, 0, 6, 1 ] }
+            }
+        },
+        {
+            "name": "Holder_2",
+            "from": [ 5, 12, 17 ], 
+            "to": [ 11, 13, 18 ], 
+            "faces": {
+                "east": { "texture": "#2", "uv": [ 0, 0, 1, 1 ] },
+                "south": { "texture": "#2", "uv": [ 0, 0, 6, 1 ] },
+                "west": { "texture": "#2", "uv": [ 0, 0, 1, 1 ] },
+                "up": { "texture": "#2", "uv": [ 0, 0, 6, 1 ] },
+                "down": { "texture": "#2", "uv": [ 0, 0, 6, 1 ] }
+            }
+        }
+    ]
+}

@@ -1,0 +1,196 @@
+{
+    "__comment": "Model generated using MrCrayfish's Model Creator (https://mrcrayfish.com/tools?id=mc)",
+    "textures": {
+        "particle": "blocks/iron_block",
+        "0": "blocks/iron_block",
+        "1": "blocks/gold_block",
+        "2": "blocks/torch_on",
+        "3": "blocks/glowstone"
+    },
+    "display": {
+        "head": {
+            "rotation": [ 0, 0, 0 ],
+            "translation": [ 0, 0, 0 ],
+            "scale": [ 1, 1, 1 ]
+        },
+        "firstperson_righthand": {
+            "rotation": [ 0, 45, 0 ],
+            "translation": [ 0, 2.5, 0 ],
+            "scale": [ 0.4, 0.4, 0.4 ]
+        },
+        "thirdperson_lefthand": {
+            "rotation": [ 75, 225, 0 ],
+            "translation": [ 0, 2.5, 0 ],
+            "scale": [ 0.375, 0.375, 0.375 ]
+        },
+        "firstperson_lefthand": {
+            "rotation": [ 0, 0, 225 ],
+            "translation": [ 0, 2.5, 0 ],
+            "scale": [ 0.4, 0.4, 0.4 ]
+        },
+        "gui": {
+            "rotation": [ 30, 225, 0 ],
+            "translation": [ 0, 0, 0 ],
+            "scale": [ 0.625, 0.625, 0.625 ]
+        },
+        "ground": {
+            "rotation": [ 0, 0, 0 ],
+            "translation": [ 0, 3, 0 ],
+            "scale": [ 0.25, 0.25, 0.25 ]
+        },
+        "fixed": {
+            "rotation": [ 0, 0, 0 ],
+            "translation": [ 0, 0, 0 ],
+            "scale": [ 0.5, 0.5, 0.5 ]
+        },
+        "thirdperson_righthand": {
+            "rotation": [ 75, 45, 0 ],
+            "translation": [ 0, 2.5, 0 ],
+            "scale": [ 0.375, 0.375, 0.375 ]
+        }
+    },
+    "elements": [
+        {
+            "name": "Top",
+            "from": [ 7, 8, 7 ], 
+            "to": [ 9, 16, 9 ], 
+            "faces": {
+                "north": { "texture": "#0", "uv": [ 0, 0, 2, 8 ] },
+                "east": { "texture": "#0", "uv": [ 0, 0, 2, 8 ] },
+                "south": { "texture": "#0", "uv": [ 0, 0, 2, 8 ] },
+                "west": { "texture": "#0", "uv": [ 0, 0, 2, 8 ] },
+                "up": { "texture": "#0", "uv": [ 0, 0, 2, 2 ] }
+            }
+        },
+        {
+            "name": "W-E",
+            "from": [ 0, 7, 7 ], 
+            "to": [ 16, 8, 9 ], 
+            "faces": {
+                "north": { "texture": "#0", "uv": [ 0, 0, 16, 1 ] },
+                "east": { "texture": "#0", "uv": [ 0, 0, 2, 1 ] },
+                "south": { "texture": "#0", "uv": [ 0, 0, 16, 1 ] },
+                "west": { "texture": "#0", "uv": [ 0, 0, 2, 1 ] },
+                "up": { "texture": "#0", "uv": [ 0, 0, 16, 2 ] },
+                "down": { "texture": "#0", "uv": [ 0, 0, 16, 2 ] }
+            }
+        },
+        {
+            "name": "N-S",
+            "from": [ 7, 7, 0 ], 
+            "to": [ 9, 8, 16 ], 
+            "faces": {
+                "north": { "texture": "#0", "uv": [ 0, 0, 2, 1 ] },
+                "east": { "texture": "#0", "uv": [ 0, 0, 16, 1 ] },
+                "south": { "texture": "#0", "uv": [ 0, 0, 2, 1 ] },
+                "west": { "texture": "#0", "uv": [ 0, 0, 16, 1 ] },
+                "up": { "texture": "#0", "uv": [ 0, 0, 2, 16 ] },
+                "down": { "texture": "#0", "uv": [ 0, 0, 2, 16 ] }
+            }
+        },
+        {
+            "name": "TorchHandle W",
+            "from": [ 0, 8, 7 ], 
+            "to": [ 2, 10, 9 ], 
+            "faces": {
+                "north": { "texture": "#1", "uv": [ 0, 0, 2, 2 ] },
+                "east": { "texture": "#1", "uv": [ 0, 0, 2, 2 ] },
+                "south": { "texture": "#1", "uv": [ 0, 0, 2, 2 ] },
+                "west": { "texture": "#1", "uv": [ 0, 0, 2, 2 ] }
+            }
+        },
+        {
+            "name": "TorchHandle E",
+            "from": [ 14, 8, 7 ], 
+            "to": [ 16, 10, 9 ], 
+            "faces": {
+                "north": { "texture": "#1", "uv": [ 0, 0, 2, 2 ] },
+                "east": { "texture": "#1", "uv": [ 0, 0, 2, 2 ] },
+                "south": { "texture": "#1", "uv": [ 0, 0, 2, 2 ] },
+                "west": { "texture": "#1", "uv": [ 0, 0, 2, 2 ] }
+            }
+        },
+        {
+            "name": "TorchHandle S",
+            "from": [ 7, 8, 14 ], 
+            "to": [ 9, 10, 16 ], 
+            "faces": {
+                "north": { "texture": "#1", "uv": [ 0, 0, 2, 2 ] },
+                "east": { "texture": "#1", "uv": [ 0, 0, 2, 2 ] },
+                "south": { "texture": "#1", "uv": [ 0, 0, 2, 2 ] },
+                "west": { "texture": "#1", "uv": [ 0, 0, 2, 2 ] }
+            }
+        },
+        {
+            "name": "TorchHandle N",
+            "from": [ 7, 8, 0 ], 
+            "to": [ 9, 10, 2 ], 
+            "faces": {
+                "north": { "texture": "#1", "uv": [ 0, 0, 2, 2 ] },
+                "east": { "texture": "#1", "uv": [ 0, 0, 2, 2 ] },
+                "south": { "texture": "#1", "uv": [ 0, 0, 2, 2 ] },
+                "west": { "texture": "#1", "uv": [ 0, 0, 2, 2 ] }
+            }
+        },
+        {
+            "name": "Torch N",
+            "from": [ 7, 10, 0 ], 
+            "to": [ 9, 14, 2 ], 
+            "faces": {
+                "north": { "texture": "#2", "uv": [ 7, 6, 9, 16 ] },
+                "east": { "texture": "#2", "uv": [ 7, 6, 9, 16 ] },
+                "south": { "texture": "#2", "uv": [ 7, 6, 9, 16 ] },
+                "west": { "texture": "#2", "uv": [ 7, 6, 9, 16 ] },
+                "up": { "texture": "#2", "uv": [ 7, 6, 9, 8 ] }
+            }
+        },
+        {
+            "name": "Torch W",
+            "from": [ 0, 10, 7 ], 
+            "to": [ 2, 14, 9 ], 
+            "faces": {
+                "north": { "texture": "#2", "uv": [ 7, 6, 9, 16 ] },
+                "east": { "texture": "#2", "uv": [ 7, 6, 9, 16 ] },
+                "south": { "texture": "#2", "uv": [ 7, 6, 9, 16 ] },
+                "west": { "texture": "#2", "uv": [ 7, 6, 9, 16 ] },
+                "up": { "texture": "#2", "uv": [ 7, 6, 9, 8 ] }
+            }
+        },
+        {
+            "name": "Torch S",
+            "from": [ 7, 10, 14 ], 
+            "to": [ 9, 14, 16 ], 
+            "faces": {
+                "north": { "texture": "#2", "uv": [ 7, 6, 9, 16 ] },
+                "east": { "texture": "#2", "uv": [ 7, 6, 9, 16 ] },
+                "south": { "texture": "#2", "uv": [ 7, 6, 9, 16 ] },
+                "west": { "texture": "#2", "uv": [ 7, 6, 9, 16 ] },
+                "up": { "texture": "#2", "uv": [ 7, 6, 9, 8 ] }
+            }
+        },
+        {
+            "name": "Torch E",
+            "from": [ 14, 10, 7 ], 
+            "to": [ 16, 14, 9 ], 
+            "faces": {
+                "north": { "texture": "#2", "uv": [ 7, 6, 9, 16 ] },
+                "east": { "texture": "#2", "uv": [ 7, 6, 9, 16 ] },
+                "south": { "texture": "#2", "uv": [ 7, 6, 9, 16 ] },
+                "west": { "texture": "#2", "uv": [ 7, 6, 9, 16 ] },
+                "up": { "texture": "#2", "uv": [ 7, 6, 9, 8 ] }
+            }
+        },
+        {
+            "name": "Bottom",
+            "from": [ 7, 6, 7 ], 
+            "to": [ 9, 7, 9 ], 
+            "faces": {
+                "north": { "texture": "#3", "uv": [ 0, 0, 2, 1 ] },
+                "east": { "texture": "#3", "uv": [ 0, 0, 2, 1 ] },
+                "south": { "texture": "#3", "uv": [ 0, 0, 2, 1 ] },
+                "west": { "texture": "#3", "uv": [ 0, 0, 2, 1 ] },
+                "down": { "texture": "#3", "uv": [ 0, 0, 2, 2 ] }
+            }
+        }
+    ]
+}

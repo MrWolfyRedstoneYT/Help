@@ -1,0 +1,39 @@
+{
+    "type": "minecraft:crafting_shaped",
+   
+    "pattern":
+    [
+        " N ",
+        "BCB",
+        "FFF"
+    ],
+   
+    "key":
+    {
+        "N":
+        {
+            "item": "wfm:candle"
+        },
+        
+        "B":
+        {
+            "item": "wfm:bottle_of_milk"
+        },
+        
+        "C":
+        {
+            "item": "wfm:cherry"
+        },
+        
+        "F":
+        {
+            "item": "wfm:flour"
+        }
+    },
+   
+    "result":
+    {
+        "item": "wfm:birthday_cake_block",
+        "count": 1
+    }
+}

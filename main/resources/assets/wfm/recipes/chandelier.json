@@ -1,0 +1,39 @@
+{
+    "type": "minecraft:crafting_shaped",
+   
+    "pattern":
+    [
+        " I ",
+        "TIT",
+        "GSG"
+    ],
+   
+    "key":
+    {
+        "I":
+        {
+            "item": "minecraft:iron_block"
+        },
+        
+        "T":
+        {
+            "item": "minecraft:torch"
+        },
+        
+        "G":
+        {
+            "item": "minecraft:gold_block"
+        },
+        
+        "S":
+        {
+            "item": "minecraft:glowstone"
+        }
+    },
+   
+    "result":
+    {
+        "item": "wfm:chandelier",
+        "count": 1
+    }
+}

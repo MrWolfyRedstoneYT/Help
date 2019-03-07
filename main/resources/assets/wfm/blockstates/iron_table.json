@@ -1,0 +1,5 @@
+{
+    "variants": {
+        "normal": { "model": "wfm:iron_table" }
+    }
+}

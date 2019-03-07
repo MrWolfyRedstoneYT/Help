@@ -1,0 +1,24 @@
+
+//Items
+item.bottle_of_milk.name=Bottle of Milk
+item.candle.name=Candle
+item.flour.name=Flour
+item.knife.name=Knife
+
+//Blocks
+tile.birthday_cake_block.name=Birthday Cake Block
+tile.white_couch.name=White Couch
+tile.red_couch.name=Red Couch
+tile.black_couch.name=Black Couch
+tile.stone_chair.name=Stone Chair
+tile.modern_glass.name=Modern Glass
+tile.iron_table.name=Iron Table
+tile.red_cabinet.name=Red Cabinet
+tile.glass_door.name=Glass Door
+tile.chandelier.name=Chandelier
+
+//Foods
+item.cherry.name=Cherry
+
+//Creative Tab
+itemGroup.furnituretab=Furniture Mod
