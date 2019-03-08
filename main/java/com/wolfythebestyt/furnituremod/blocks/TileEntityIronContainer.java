@@ -2,7 +2,6 @@ package com.wolfythebestyt.furnituremod.blocks;
 
 import com.wolfythebestyt.furnituremod.blocks.container.ContainerIronContainerBlock;
 import com.wolfythebestyt.furnituremod.util.Reference;
-
 import net.minecraft.client.renderer.texture.ITickable;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.entity.player.InventoryPlayer;
@@ -16,14 +15,14 @@ import net.minecraft.util.NonNullList;
 import net.minecraft.util.SoundCategory;
 import net.minecraft.util.math.AxisAlignedBB;
 
-public class TileEntityIronContainer extends TileEntityLockableLoot implements ITickable
+public class TileEntityIronContainer  extends TileEntityLockableLoot implements ITickable
 {
-	private NonNullList<ItemStack>  chestContents = NonNullList.<ItemStack>withSize(72, ItemStack.EMPTY);
+	private NonNullList<ItemStack> chestContents = NonNullList.<ItemStack>withSize(72, ItemStack.EMPTY);
 	public int numPlayersUsing, ticksSinceSync;
 	public float lidAngle, prevLidAngle;
 	
 	@Override
-	public int getSizeInventory() 
+	public int getSizeInventory()
 	{
 		return 72;
 	}
@@ -33,9 +32,9 @@ public class TileEntityIronContainer extends TileEntityLockableLoot implements I
 	{
 		return 64;
 	}
-
+	
 	@Override
-	public boolean isEmpty() 
+	public boolean isEmpty()
 	{
 		for(ItemStack stack : this.chestContents)
 		{
@@ -44,15 +43,15 @@ public class TileEntityIronContainer extends TileEntityLockableLoot implements I
 		
 		return true;
 	}
-
+	
 	@Override
 	public String getName() 
 	{
-		return this.hasCustomName() ? this.customName : "container.iron_conatiner_block";
+		return this.hasCustomName() ? this.customName : "container.copper_chest";
 	}
 	
 	@Override
-	public void readFromNBT(NBTTagCompound compound) 
+	public void readFromNBT(NBTTagCompound compound)
 	{
 		super.readFromNBT(compound);
 		this.chestContents = NonNullList.<ItemStack>withSize(this.getSizeInventory(), ItemStack.EMPTY);
@@ -62,7 +61,7 @@ public class TileEntityIronContainer extends TileEntityLockableLoot implements I
 	}
 	
 	@Override
-	public NBTTagCompound writeToNBT(NBTTagCompound compound) 
+	public NBTTagCompound writeToNBT(NBTTagCompound compound)
 	{
 		super.writeToNBT(compound);
 		
@@ -81,15 +80,16 @@ public class TileEntityIronContainer extends TileEntityLockableLoot implements I
 	@Override
 	public String getGuiID() 
 	{
-		return Reference.MOD_ID + ":iron_container_block";
+		return Reference.MOD_ID + ":iron_container";
 	}
 	
 	@Override
-	protected NonNullList<ItemStack> getItems()
+	protected NonNullList<ItemStack> getItems() 
 	{
 		return this.chestContents;
 	}
 	
+	@Override
 	public void update()
 	{
 		if (!this.world.isRemote && this.numPlayersUsing != 0 && (this.ticksSinceSync + pos.getX() + pos.getY() + pos.getZ()) % 200 == 0)
@@ -154,7 +154,7 @@ public class TileEntityIronContainer extends TileEntityLockableLoot implements I
 	}
 	
 	@Override
-	public void openInventory(EntityPlayer player) 
+	public void openInventory(EntityPlayer player)
 	{
 		++this.numPlayersUsing;
 		this.world.addBlockEvent(pos, this.getBlockType(), 1, this.numPlayersUsing);
@@ -173,5 +173,5 @@ public class TileEntityIronContainer extends TileEntityLockableLoot implements I
 	public void tick() 
 	{
 		
-	}
+	}	
 }

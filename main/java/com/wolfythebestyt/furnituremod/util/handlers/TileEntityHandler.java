@@ -10,6 +10,6 @@ public class TileEntityHandler
 {
 	public static void registerTileEntities()
 	{
-		GameRegistry.registerTileEntity(TileEntityIronContainer.class, new ResourceLocation(Reference.MOD_ID + ":iron_container_block"));
+		GameRegistry.registerTileEntity(TileEntityIronContainer.class, new ResourceLocation(Reference.MOD_ID + ":iron_container"));
 	}
 }

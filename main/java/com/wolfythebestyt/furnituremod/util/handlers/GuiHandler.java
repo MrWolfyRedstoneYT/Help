@@ -24,12 +24,7 @@ public class GuiHandler implements IGuiHandler
 	public Object getClientGuiElement(int ID, EntityPlayer player, World world, int x, int y, int z)
 	{
 		if(ID == Reference.GUI_IRON_CONTAINER) return new GuiContainerBlock(player.inventory, (TileEntityIronContainer)world.getTileEntity(new BlockPos(x,y,z)), player);
-
 		return null;
-	}
-	
-	public static void registerGUIs()
-	{
 	}
 	
 }

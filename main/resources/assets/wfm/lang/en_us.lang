@@ -16,6 +16,11 @@ tile.iron_table.name=Iron Table
 tile.red_cabinet.name=Red Cabinet
 tile.glass_door.name=Glass Door
 tile.chandelier.name=Chandelier
+tile.iron_container.name=Iron Container
+
+
+//Container
+container.iron_container=Iron Container
 
 //Foods
 item.cherry.name=Cherry

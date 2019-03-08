@@ -23,13 +23,9 @@ import net.minecraft.world.World;
 
 public class IronContainerBlock extends BlockContainer
 {
-
 	public IronContainerBlock(String name) 
 	{
 		super(Material.IRON);
-		setSoundType(SoundType.METAL);
-		setHardness(5.0F);
-		setResistance(7.0F);
 		setUnlocalizedName(name);
 		setRegistryName(name);
 		setCreativeTab(Main.furnituretab);
@@ -41,7 +37,7 @@ public class IronContainerBlock extends BlockContainer
 	@Override
 	public boolean onBlockActivated(World worldIn, BlockPos pos, IBlockState state, EntityPlayer playerIn, EnumHand hand, EnumFacing facing, float hitX, float hitY, float hitZ) 
 	{
-		if(worldIn.isRemote) 
+		if(!worldIn.isRemote)
 		{
 			playerIn.openGui(Main.instance, Reference.GUI_IRON_CONTAINER, worldIn, pos.getX(), pos.getY(), pos.getZ());
 		}
@@ -58,7 +54,7 @@ public class IronContainerBlock extends BlockContainer
 	}
 	
 	@Override
-	public void onBlockPlacedBy(World worldIn, BlockPos pos, IBlockState state, EntityLivingBase placer,ItemStack stack)
+	public void onBlockPlacedBy(World worldIn, BlockPos pos, IBlockState state, EntityLivingBase placer, ItemStack stack)
 	{
 		if(stack.hasDisplayName())
 		{
@@ -67,12 +63,12 @@ public class IronContainerBlock extends BlockContainer
 			if(tileentity instanceof TileEntityIronContainer)
 			{
 				((TileEntityIronContainer)tileentity).setCustomName(stack.getDisplayName());
-			}
+			}	
 		}
 	}
 	
 	@Override
-	public TileEntity createNewTileEntity(World worldIn, int meta) 
+	public TileEntity createNewTileEntity(World worldIn, int meta)
 	{
 		return new TileEntityIronContainer();
 	}
@@ -90,13 +86,13 @@ public class IronContainerBlock extends BlockContainer
 	}
 	
 	@Override
-	public boolean isFullCube(IBlockState state) 
+	public boolean isFullCube(IBlockState state)
 	{
 		return false;
 	}
 	
 	@Override
-	public boolean isOpaqueCube(IBlockState state) 
+	public boolean isOpaqueCube(IBlockState state)
 	{
 		return false;
 	}

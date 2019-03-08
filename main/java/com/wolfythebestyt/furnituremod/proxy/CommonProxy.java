@@ -1,7 +1,7 @@
 package com.wolfythebestyt.furnituremod.proxy;
 
 import com.wolfythebestyt.furnituremod.Main;
-import com.wolfythebestyt.furnituremod.util.handlers.GUIHandler;
+import com.wolfythebestyt.furnituremod.util.handlers.GuiHandler;
 
 import net.minecraft.item.Item;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
@@ -13,6 +13,6 @@ public class CommonProxy
 	
 	public void init(FMLInitializationEvent event) 
 	{
-	    NetworkRegistry.INSTANCE.registerGuiHandler(Main.instance, new GUIHandler());
+	    NetworkRegistry.INSTANCE.registerGuiHandler(Main.instance, new GuiHandler());
 	}
 }
